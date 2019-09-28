@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration.AzureAppConfiguration;
 
 namespace AzureAppConfigurationManagedIdentity.Web
 {
@@ -15,7 +16,11 @@ namespace AzureAppConfigurationManagedIdentity.Web
                 .CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((context, config) =>
                 {
-
+                    var settings = config.Build();
+                    config.AddAzureAppConfiguration(options =>
+                    {
+                        options.ConnectWithManagedIdentity(settings["EndPoints:AppConfiguration"]);
+                    });
                 })
                 .UseStartup<Startup>();
     }
