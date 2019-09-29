@@ -1,4 +1,4 @@
-﻿namespace AzureAppConfigurationManagedIdentity.Web.Models
+﻿namespace ManagedIdentityExample.Models
 {
     public class HomeViewModel
     {

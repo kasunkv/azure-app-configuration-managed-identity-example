@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration.AzureAppConfiguration;
 
-namespace AzureAppConfigurationManagedIdentity.Web
+namespace ManagedIdentityExample
 {
     public class Program
     {

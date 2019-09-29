@@ -1,6 +1,6 @@
 using System;
 
-namespace AzureAppConfigurationManagedIdentity.Web.Models
+namespace ManagedIdentityExample.Models
 {
     public class ErrorViewModel
     {

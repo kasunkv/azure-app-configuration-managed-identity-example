@@ -1,9 +1,9 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using AzureAppConfigurationManagedIdentity.Web.Models;
+using ManagedIdentityExample.Models;
 using Microsoft.Extensions.Configuration;
 
-namespace AzureAppConfigurationManagedIdentity.Web.Controllers
+namespace ManagedIdentityExample.Controllers
 {
     public class HomeController : Controller
     {
